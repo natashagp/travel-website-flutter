@@ -10,15 +10,16 @@ class _LeftPageState extends State<LeftPage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.only(top: 20.0, left: 20.0, bottom: 20.0),
       child: Container(
         height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width / 2,
+        width: MediaQuery.of(context).size.width * 0.55,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30.0),
           image: DecorationImage(
             image: NetworkImage(
-                "https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
+              "https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            ),
             fit: BoxFit.cover,
           ),
         ),
@@ -35,11 +36,9 @@ class _LeftPageState extends State<LeftPage> {
                 color: Colors.white,
               ),
             ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.6,
-            ),
+            Spacer(),
             Padding(
-              padding: const EdgeInsets.only(top: 0.0, left: 30.0),
+              padding: const EdgeInsets.only(left: 30.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -69,7 +68,7 @@ class _LeftPageState extends State<LeftPage> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(7.0),
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
                       height: 40.0,
                       width: 170.0,

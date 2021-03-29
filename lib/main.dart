@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_web_page/Sections/LeftPage.dart';
+import 'package:travel_web_page/Sections/RightPage.dart';
 
 void main() {
   runApp(
@@ -22,6 +23,7 @@ class _MyAppState extends State<MyApp> {
       body: Row(
         children: [
           LeftPage(),
+          RightPage(),
         ],
       ),
     );
